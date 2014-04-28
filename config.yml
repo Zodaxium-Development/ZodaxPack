@@ -1,0 +1,4 @@
+MOTD: '&aThis is a motd!'
+PlayerList:
+- '&aMessage 1'
+- '&aMessage 2'

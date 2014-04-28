@@ -1,0 +1,5 @@
+name: ZodaxPack
+main: me.zodaxium.zodaxpack.ZodaxPack
+version: 1.0
+description: A BungeeCord Module Pack
+author: Zodaxium
