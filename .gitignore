@@ -22,4 +22,8 @@
 *.iml
 *.ipr
 *.iws
+<<<<<<< HEAD
 .idea/
+=======
+.idea/
+>>>>>>> refs/remotes/choose_remote_name/master
