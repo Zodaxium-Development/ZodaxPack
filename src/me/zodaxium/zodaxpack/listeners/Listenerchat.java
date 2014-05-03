@@ -41,11 +41,10 @@ public class Listenerchat implements Listener{
 	
 	/* Server Switch Cmd */
 	private void handleCommand(ChatEvent e, ProxiedPlayer p, String message){
-		String[] args = message.split(" ");
-		if(!(args.length < 1)){
-			if(plugin.servers.containsKey(args[0].toLowerCase())){
-				p.connect(plugin.servers.get(args[0].toLowerCase()));
-			}
+		String msg = message.split(" ")[0].toLowerCase();
+		if(plugin.servers.containsKey(msg.replaceFirst("/", ""))){
+			p.connect(plugin.servers.get(msg.replaceFirst("/", "")));
+			e.setCancelled(true);
 		}
 		return;
 	}
