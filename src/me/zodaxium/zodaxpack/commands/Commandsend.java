@@ -13,7 +13,7 @@ public class Commandsend extends Command{
 	ZodaxPack plugin;
 	
 	public Commandsend(ZodaxPack plugin){
-		super("send", "bungeecord.command.send", new String[0]);
+		super("send", "zpack.send", new String[0]);
 		this.plugin = plugin;
 		plugin.getProxy().getPluginManager().registerCommand(plugin, this);
 	}

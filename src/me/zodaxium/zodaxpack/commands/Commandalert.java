@@ -12,7 +12,7 @@ public class Commandalert extends Command{
 	ZodaxPack plugin;
 	
 	public Commandalert(ZodaxPack plugin){
-		super("alert", "bungeecord.command.alert", new String[0]);
+		super("alert", "zpack.alert", new String[0]);
 		this.plugin = plugin;
 		plugin.getProxy().getPluginManager().registerCommand(plugin, this);
 	}

@@ -1,6 +1,6 @@
 /*   1:    */ package net.craftminecraft.bungee.bungeeyaml.bukkitapi.file;
 /*   2:    */ 
-/*   3:    */ /*   4:    */ import java.io.File;
+/*   3:    */ import java.io.File;
 /*   5:    */ import java.io.FileNotFoundException;
 /*   6:    */ import java.io.IOException;
 /*   7:    */ import java.io.InputStream;

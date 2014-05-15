@@ -12,7 +12,7 @@ public class Commandfind extends Command{
 	ZodaxPack plugin;
 	
 	public Commandfind(ZodaxPack plugin){
-		super("find", "bungeecord.command.find", new String[0]);
+		super("find", "zpack.find", new String[0]);
 		this.plugin = plugin;
 		plugin.getProxy().getPluginManager().registerCommand(plugin, this);
 	}

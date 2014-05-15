@@ -19,12 +19,14 @@ public class Commandlist extends Command{
 	ZodaxPack plugin;
 	
 	public Commandlist(ZodaxPack plugin){
-		super("glist", "bungeecord.command.list", new String[0]);
+		super("glist", "zpack.list", new String[0]);
 		this.plugin = plugin;
 		plugin.getProxy().getPluginManager().registerCommand(plugin, this);
 	}
 	
+	@SuppressWarnings("deprecation")
 	public void execute(CommandSender sender, String[] args){
+		int online = 0;
 		ArrayList<ServerInfo> serverinfo = new ArrayList<ServerInfo>();
 		for(ServerInfo s : plugin.getProxy().getServers().values()){
 			serverinfo.add(s);
@@ -45,6 +47,7 @@ public class Commandlist extends Command{
 					sb.append(i.next());
 			    	if(i.hasNext())
 			    		sb.append(", ");
+			    		online++;
 				}
 				
 				if(s.getPlayers().size() != 0)
@@ -56,5 +59,6 @@ public class Commandlist extends Command{
 				sender.sendMessage(comp);
 			}
 		}
+		sender.sendMessage(plugin.colorize("&6Total Online: &9" + online));
 	}
 }

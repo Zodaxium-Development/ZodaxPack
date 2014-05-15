@@ -10,7 +10,7 @@ public class Commands extends Command{
 	ZodaxPack plugin;
 	
 	public Commands(ZodaxPack plugin){
-		super("s", "zchat.channel", new String[0]);
+		super("s", "zpack.channel", new String[0]);
 		this.plugin = plugin;
 		plugin.getProxy().getPluginManager().registerCommand(plugin, this);
 	}

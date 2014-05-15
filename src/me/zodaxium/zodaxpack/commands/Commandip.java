@@ -12,7 +12,7 @@ public class Commandip extends Command{
 	ZodaxPack plugin;
 	
 	public Commandip(ZodaxPack plugin){
-		super("ip", "bungeecord.command.ip", new String[0]);
+		super("ip", "zpack.ip", new String[0]);
 		this.plugin = plugin;
 		plugin.getProxy().getPluginManager().registerCommand(plugin, this);
 	}

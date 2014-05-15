@@ -19,7 +19,7 @@ public class Commandserver extends Command{
 	ZodaxPack plugin;
 	
 	public Commandserver(ZodaxPack plugin){
-		super("server", "bungeecord.command.server", new String[0]);
+		super("server", "zpack.server", new String[0]);
 		this.plugin = plugin;
 		plugin.getProxy().getPluginManager().registerCommand(plugin, this);
 	}
